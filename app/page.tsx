@@ -13,17 +13,15 @@ export default function Home() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-10">
         <div className="flex flex-col items-center">
           <Image
-            src="/logo.jpg"
+            src="/transparentbg.png"
             alt="Brewcade Logo"
             width={500}
-            height={250}
-            className="rounded-xl neon-image"
+            height={500}
+            // className="rounded-full"
           />
-
           <h1
             className="
     arcade-title
-    mt-8
     text-center
     [text-shadow:-2px_-2px_0_white,2px_-2px_0_white,-2px_2px_0_white,2px_2px_0_white,0_0_10px_#ff00ff,0_0_20px_#ff00ff]
   "
@@ -62,31 +60,15 @@ export default function Home() {
             WELCOME PLAYER ONE
           </h2>
 
-          <div className="space-y-6 text-zinc-200 leading-8 text-lg">
-            <p>
-              Welcome to our family-friendly establishment where fun and
-              relaxation come together.
-            </p>
-
-            <p>
-              Enjoy craft beer, wine, old-school arcade games, pool tables,
-              shuffleboard, foosball, and darts.
-            </p>
-
-            <p>
-              Arcade wristbands are available for unlimited gameplay and our
-              Thursday Night Dart League runs every week from 7 PM – 9 PM.
-            </p>
-
-            <p>
-              We don&apos;t operate a kitchen, but we offer light snacks and
-              welcome outside food or delivery.
-            </p>
-
-            <p>
-              Looking for a private event? We host birthday parties, family
-              gatherings, and special events throughout the week.
-            </p>
+          <div className="space-y-6 text-zinc-200 leading-8 text-lg text-justify">
+            Welcome to our family-friendly establishment where fun and
+            relaxation come together. Enjoy craft beer, wine, old-school arcade
+            games, pool tables, shuffleboard, foosball, and darts. Arcade
+            wristbands are available for unlimited gameplay and our Thursday
+            Night Dart League runs every week from 7 PM – 9 PM. We don&apos;t
+            operate a kitchen, but we offer light snacks and welcome outside
+            food or delivery. Looking for a private event? We host birthday
+            parties, family gatherings, and special events throughout the week.
           </div>
         </section>
 
