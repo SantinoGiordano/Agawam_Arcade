@@ -1,16 +1,16 @@
+"use client";
+
+import Footer from "@/components/footer";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black relative overflow-hidden">
-      {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#581c87_0%,#000_60%)]" />
 
-      {/* Scanlines */}
       <div className="scanlines absolute inset-0 pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-10">
-        {/* Logo */}
         <div className="flex flex-col items-center">
           <Image
             src="/logo.jpg"
@@ -35,7 +35,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Image Section */}
         <div className="grid md:grid-cols-2 gap-6 mt-12">
           <Image
             src="/pooltable.webp"
@@ -53,13 +52,15 @@ export default function Home() {
             className="rounded-xl w-full h-auto neon-image"
           />
         </div>
-
-        {/* Content Box */}
         <section className="arcade-screen mt-12">
-          <h2 className="
+          <h2
+            className="
           section-title
           arcade-title
-          ">WELCOME PLAYER ONE</h2>
+          "
+          >
+            WELCOME PLAYER ONE
+          </h2>
 
           <div className="space-y-6 text-zinc-200 leading-8 text-lg">
             <p>
@@ -89,7 +90,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Draft List */}
         <section className="arcade-screen mt-10">
           <h2 className="section-title">CURRENT DRAFTS</h2>
 
