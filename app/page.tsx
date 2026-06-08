@@ -1,8 +1,29 @@
-
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <div className="p-5">
+        <Image 
+        src="/logo.jpg" 
+        alt="Brewcade Logo" 
+        width={400} 
+        height={200} 
+        />
+        <Image 
+        src="/pooltable.webp" 
+        alt="Brewcade Logo" 
+        width={400} 
+        height={200} 
+        />
+        <Image 
+        src="/otherPooltable.webp" 
+        alt="Brewcade Logo" 
+        width={400} 
+        height={200} 
+        />
+      </div>
+      
       <div className="p-5">CRAFT BEER WINE ARCADE GAMES MUSIC</div>
 
       <div className="flex flex-col items-center justify-center gap-4 p-4 text-center text-sm text-zinc-700 dark:text-zinc-300">
