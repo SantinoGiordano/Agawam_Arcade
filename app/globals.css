@@ -1,26 +1,124 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+}
+
+/* Scanline Effect */
+
+.scanlines::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.03) 3px
+  );
+
+  pointer-events: none;
+}
+
+/* Arcade Title */
+
+.arcade-title {
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #ff00ff;
+
+  text-shadow:
+    0 0 5px #ff00ff,
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff,
+    0 0 40px #ff00ff;
+}
+
+.arcade-subtitle {
+  font-size: 1.2rem;
+  color: #00ffff;
+
+  text-shadow:
+    0 0 5px #00ffff,
+    0 0 15px #00ffff;
+}
+
+/* Main Content Screen */
+
+.arcade-screen {
+  background: rgba(10, 10, 10, 0.85);
+
+  border: 2px solid #ff00ff;
+
+  border-radius: 16px;
+
+  padding: 2rem;
+
+  backdrop-filter: blur(6px);
+
+  box-shadow:
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff,
+    inset 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+/* Section Headers */
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #00ffff;
+
+  margin-bottom: 1.5rem;
+
+  text-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+}
+
+/* Images */
+
+.neon-image {
+  border: 2px solid #00ffff;
+
+  box-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+
+  transition: all 0.3s ease;
+}
+
+.neon-image:hover {
+  transform: scale(1.02);
+
+  box-shadow:
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
+}
+
+/* Draft Cards */
+
+.draft-card {
+  padding: 1rem;
+
+  border-radius: 12px;
+
+  border: 1px solid #00ffff;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+.draft-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
 }
