@@ -1,65 +1,40 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      <div className="p-5">CRAFT BEER WINE ARCADE GAMES MUSIC</div>
+
+      <div className="flex flex-col items-center justify-center gap-4 p-4 text-center text-sm text-zinc-700 dark:text-zinc-300">
+        Welcome to our family-friendly establishment, where fun and relaxation
+        come together! We proudly offer a curated selection of craft beer and
+        wine, complemented by the nostalgic charm of old-school arcade games
+        ($10 unlimited play wristbands are sold at the bar), pool tables,
+        shuffleboard, foosball, and darts. Speaking of darts, JOIN OUR THURSDAY
+        NIGHT DART LEAGUE from 7-9 pm–just show up and play! While we don’t
+        operate a kitchen, we provide a selection of light snacks for your
+        convenience. You’re welcome to bring your own food or arrange for
+        delivery directly to the Brewcade. If you know of any food trucks
+        interested in parking at the Brewcade, please let us know! We are also
+        available to host private parties, typically before our regular business
+        hours on Saturdays/Sundays from 1-3 pm or after hours parties can be
+        booked for the older crowd. Check out our private party details here. We
+        can also book private events on Monday-Wednesday and are more flexible
+        on times/pricing since we’re typically closed those days/nights anyway,
+        so don’t hesitate to reach out to brewcade.sarnelli@gmail.com with any
+        questions/requests! OUR DRAFT LIST INCLUDES: Blue Moon Belgian White,
+        Downeast Cider, Sam Adams Seasonal, Von Trap Helles Golden Lager,
+        Harpoon Blueberry, Brewcade House IPA by Progression, Fresh Pick IPA by
+        Fort Hill, and Fiddlehead IPA In addition to our 8 drafts, we also offer
+        a variety of Truly seltzers, Lunar seltzers, Hummy cocktails, Twisted
+        Tea, wine, wine cocktails (margaritas, strawberry daiquiris, pina
+        coladas, mudslides, mojitos), wine based well drinks (vodka, tequila,
+        rum, gin, whiskey), a local sour, and domestic cans of beer (including
+        an NA option!), in addition to cans of soda, bottled water, and juice
+        boxes for the younger customers! NO OUTSIDE BEVERAGES are allowed in the
+        Brewcade; all drinks must be purchased at our bar. Thank you for
+        understanding!
+      </div>
     </div>
   );
 }
