@@ -2,60 +2,130 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <div className="p-5">
-        <Image 
-        src="/logo.jpg" 
-        alt="Brewcade Logo" 
-        width={400} 
-        height={200} 
-        />
-        <Image 
-        src="/pooltable.webp" 
-        alt="Brewcade Logo" 
-        width={400} 
-        height={200} 
-        />
-        <Image 
-        src="/otherPooltable.webp" 
-        alt="Brewcade Logo" 
-        width={400} 
-        height={200} 
-        />
-      </div>
-      
-      <div className="p-5">CRAFT BEER WINE ARCADE GAMES MUSIC</div>
+    <main className="min-h-screen bg-black relative overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#581c87_0%,#000_60%)]" />
 
-      <div className="flex flex-col items-center justify-center gap-4 p-4 text-center text-sm text-zinc-700 dark:text-zinc-300">
-        Welcome to our family-friendly establishment, where fun and relaxation
-        come together! We proudly offer a curated selection of craft beer and
-        wine, complemented by the nostalgic charm of old-school arcade games
-        ($10 unlimited play wristbands are sold at the bar), pool tables,
-        shuffleboard, foosball, and darts. Speaking of darts, JOIN OUR THURSDAY
-        NIGHT DART LEAGUE from 7-9 pm–just show up and play! While we don’t
-        operate a kitchen, we provide a selection of light snacks for your
-        convenience. You’re welcome to bring your own food or arrange for
-        delivery directly to the Brewcade. If you know of any food trucks
-        interested in parking at the Brewcade, please let us know! We are also
-        available to host private parties, typically before our regular business
-        hours on Saturdays/Sundays from 1-3 pm or after hours parties can be
-        booked for the older crowd. Check out our private party details here. We
-        can also book private events on Monday-Wednesday and are more flexible
-        on times/pricing since we’re typically closed those days/nights anyway,
-        so don’t hesitate to reach out to brewcade.sarnelli@gmail.com with any
-        questions/requests! OUR DRAFT LIST INCLUDES: Blue Moon Belgian White,
-        Downeast Cider, Sam Adams Seasonal, Von Trap Helles Golden Lager,
-        Harpoon Blueberry, Brewcade House IPA by Progression, Fresh Pick IPA by
-        Fort Hill, and Fiddlehead IPA In addition to our 8 drafts, we also offer
-        a variety of Truly seltzers, Lunar seltzers, Hummy cocktails, Twisted
-        Tea, wine, wine cocktails (margaritas, strawberry daiquiris, pina
-        coladas, mudslides, mojitos), wine based well drinks (vodka, tequila,
-        rum, gin, whiskey), a local sour, and domestic cans of beer (including
-        an NA option!), in addition to cans of soda, bottled water, and juice
-        boxes for the younger customers! NO OUTSIDE BEVERAGES are allowed in the
-        Brewcade; all drinks must be purchased at our bar. Thank you for
-        understanding!
+      {/* Scanlines */}
+      <div className="scanlines absolute inset-0 pointer-events-none" />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-4 py-10">
+        {/* Logo */}
+        <div className="flex flex-col items-center">
+          <Image
+            src="/logo.jpg"
+            alt="Brewcade Logo"
+            width={500}
+            height={250}
+            className="rounded-xl neon-image"
+          />
+
+          <h1 className="arcade-title mt-8 text-center">
+            BREWCADE
+          </h1>
+
+          <p className="arcade-subtitle mt-4 text-center">
+            CRAFT BEER • WINE • ARCADE GAMES • MUSIC
+          </p>
+        </div>
+
+        {/* Image Section */}
+        <div className="grid md:grid-cols-2 gap-6 mt-12">
+          <Image
+            src="/pooltable.webp"
+            alt="Pool Table"
+            width={800}
+            height={500}
+            className="rounded-xl w-full h-auto neon-image"
+          />
+
+          <Image
+            src="/otherPooltable.webp"
+            alt="Pool Table"
+            width={800}
+            height={500}
+            className="rounded-xl w-full h-auto neon-image"
+          />
+        </div>
+
+        {/* Content Box */}
+        <section className="arcade-screen mt-12">
+          <h2 className="section-title">
+            WELCOME PLAYER ONE
+          </h2>
+
+          <div className="space-y-6 text-zinc-200 leading-8 text-lg">
+            <p>
+              Welcome to our family-friendly establishment where fun and
+              relaxation come together.
+            </p>
+
+            <p>
+              Enjoy craft beer, wine, old-school arcade games, pool tables,
+              shuffleboard, foosball, and darts.
+            </p>
+
+            <p>
+              Arcade wristbands are available for unlimited gameplay and our
+              Thursday Night Dart League runs every week from 7 PM – 9 PM.
+            </p>
+
+            <p>
+              We don&apos;t operate a kitchen, but we offer light snacks and welcome
+              outside food or delivery.
+            </p>
+
+            <p>
+              Looking for a private event? We host birthday parties, family
+              gatherings, and special events throughout the week.
+            </p>
+          </div>
+        </section>
+
+        {/* Draft List */}
+        <section className="arcade-screen mt-10">
+          <h2 className="section-title">
+            CURRENT DRAFTS
+          </h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-white">
+            {[
+              "Blue Moon Belgian White",
+              "Downeast Cider",
+              "Sam Adams Seasonal",
+              "Von Trapp Helles Lager",
+              "Harpoon Blueberry",
+              "Brewcade House IPA",
+              "Fresh Pick IPA",
+              "Fiddlehead IPA",
+            ].map((beer) => (
+              <div
+                key={beer}
+                className="draft-card"
+              >
+                {beer}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section className="arcade-screen mt-10 mb-20">
+          <h2 className="section-title">
+            CONTACT
+          </h2>
+
+          <div className="text-center text-white space-y-3">
+            <p>
+              Questions or Private Event Requests?
+            </p>
+
+            <p className="text-cyan-400 text-xl">
+              brewcade.sarnelli@gmail.com
+            </p>
+          </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 }
