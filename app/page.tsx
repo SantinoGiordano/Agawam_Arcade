@@ -20,10 +20,16 @@ export default function Home() {
             className="rounded-xl neon-image"
           />
 
-          <h1 className="arcade-title mt-8 text-center">
+          <h1
+            className="
+    arcade-title
+    mt-8
+    text-center
+    [text-shadow:-2px_-2px_0_white,2px_-2px_0_white,-2px_2px_0_white,2px_2px_0_white,0_0_10px_#ff00ff,0_0_20px_#ff00ff]
+  "
+          >
             BREWCADE
           </h1>
-
           <p className="arcade-subtitle mt-4 text-center">
             CRAFT BEER • WINE • ARCADE GAMES • MUSIC
           </p>
@@ -50,9 +56,10 @@ export default function Home() {
 
         {/* Content Box */}
         <section className="arcade-screen mt-12">
-          <h2 className="section-title">
-            WELCOME PLAYER ONE
-          </h2>
+          <h2 className="
+          section-title
+          arcade-title
+          ">WELCOME PLAYER ONE</h2>
 
           <div className="space-y-6 text-zinc-200 leading-8 text-lg">
             <p>
@@ -71,8 +78,8 @@ export default function Home() {
             </p>
 
             <p>
-              We don&apos;t operate a kitchen, but we offer light snacks and welcome
-              outside food or delivery.
+              We don&apos;t operate a kitchen, but we offer light snacks and
+              welcome outside food or delivery.
             </p>
 
             <p>
@@ -84,9 +91,7 @@ export default function Home() {
 
         {/* Draft List */}
         <section className="arcade-screen mt-10">
-          <h2 className="section-title">
-            CURRENT DRAFTS
-          </h2>
+          <h2 className="section-title">CURRENT DRAFTS</h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-white">
             {[
@@ -99,10 +104,7 @@ export default function Home() {
               "Fresh Pick IPA",
               "Fiddlehead IPA",
             ].map((beer) => (
-              <div
-                key={beer}
-                className="draft-card"
-              >
+              <div key={beer} className="draft-card">
                 {beer}
               </div>
             ))}
@@ -111,18 +113,12 @@ export default function Home() {
 
         {/* Contact */}
         <section className="arcade-screen mt-10 mb-20">
-          <h2 className="section-title">
-            CONTACT
-          </h2>
+          <h2 className="section-title">CONTACT</h2>
 
           <div className="text-center text-white space-y-3">
-            <p>
-              Questions or Private Event Requests?
-            </p>
+            <p>Questions or Private Event Requests?</p>
 
-            <p className="text-cyan-400 text-xl">
-              brewcade.sarnelli@gmail.com
-            </p>
+            <p className="text-cyan-400 text-xl">brewcade.sarnelli@gmail.com</p>
           </div>
         </section>
       </div>
