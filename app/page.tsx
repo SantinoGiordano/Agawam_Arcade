@@ -1,6 +1,5 @@
 "use client";
 
-import Footer from "@/components/footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,6 +16,7 @@ export default function Home() {
             width={500}
             height={500}
             className="w-48 sm:w-64 md:w-80 lg:w-[500px] h-auto"
+            draggable={false}
           />
 
           <h1
@@ -38,6 +38,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-8 sm:mt-12">
           <Image
+            draggable={false}
             src="/pooltable.webp"
             alt="Pool Table"
             width={800}
@@ -51,6 +52,7 @@ export default function Home() {
             width={800}
             height={500}
             className="rounded-xl w-full h-auto neon-image"
+            draggable={false}
           />
         </div>
 
