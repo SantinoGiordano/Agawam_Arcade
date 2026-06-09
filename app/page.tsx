@@ -66,7 +66,7 @@ export default function Home() {
             relaxation come together. Enjoy craft beer, wine, old-school arcade
             games, pool tables, shuffleboard, foosball, and darts. Arcade
             wristbands are available for unlimited gameplay and our Thursday
-            Night Dart League runs every week from 7 PM – 9 PM. We don't operate
+            Night Dart League runs every week from 7 PM – 9 PM. We don&apos;t operate
             a kitchen, but we offer light snacks and welcome outside food or
             delivery. Looking for a private event? We host birthday parties,
             family gatherings, and special events throughout the week.
